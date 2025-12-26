@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="theme-toggle" id="themeToggle" title="Toggle light/dark mode"></div>
+    <h1>Weather App</h1>
+    <form id="weatherForm">
+      <input type="text" id="cityInput" placeholder="Enter city name" required />
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="weather-info" id="weatherInfo" style="display:none;">
+      <div class="icon" id="weatherIcon"></div>
+      <div class="details">
+        <div class="temp" id="temp"></div>
+        <div class="humidity" id="humidity"></div>
+        <div class="desc" id="desc"></div>
+      </div>
+    </div>
+    <div class="forecast" id="forecast"></div>
+    <div class="error" id="errorMsg"></div>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
